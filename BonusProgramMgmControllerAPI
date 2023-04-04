@@ -1,0 +1,450 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: МКБ бонус
+  description: API для работы с программой МКБ бонус
+  contact:
+    name: Your Name
+    email: your.email@example.com
+    url: https://example.com
+servers:
+  - url: https://api.example.com/v1
+paths:
+  /BonusProgramMgmController/mainScreen:
+    get:
+      summary: Получение главного экрана со всеми виджетами
+      description: Этот метод возвращает JSON-объект, содержащий информацию для отображения главного экрана программы МКБ бонус
+      parameters:
+        - name: rid
+          in: query
+          description: User session parameter
+          required: true
+          schema:
+            type: string
+        - name: sid
+          in: query
+          description: User session parameter
+          required: true
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: API method name
+          required: true
+          schema:
+            type: string
+        - name: uid
+          in: query
+          description: User session parameter
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BonusMainScreen'             
+components:
+  schemas:
+    BonusMainScreen:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Название экрана
+        bonusValueWidget:
+          $ref: '#/components/schemas/BonusValueWidget'
+          description: Виджет с информацией о количестве бонусов на счету
+        writeOffBonusWidget:
+          $ref: '#/components/schemas/WriteOffBonusWidget'
+          description: Виджет с информацией о предстоящем списании бонусов
+        bonusCategory:
+          $ref: '#/components/schemas/BonusCategory'
+          description: Блок с информацией о бонусных категориях и кнопкой для смены категорий
+        bonusLimitinfo:
+          $ref: '#/components/schemas/BonusLimitinfo'
+          description: Блок с информацией о лимитах на начисление бонусов
+        bonusHistory:
+          $ref: '#/components/schemas/BonusHistory'
+          description: Блок с информацией об истории начислений бонусов
+        loyaltyBannersInfo:
+          type: object
+          description: Информация о лояльности
+        bonusRulesButton:
+          $ref: '#/components/schemas/Button'
+          description: Кнопка для перехода к правилам программы МКБ Бонус
+        footerText:
+          type: array
+          items:
+            $ref: '#/components/schemas/FooterText'
+          description: Список ссылок на дополнительную информацию
+    BonusValueWidget:
+      type: object
+      properties:
+        bonusValue:
+          type: object
+          description: Информация о количестве бонусных баллов на счету пользователя
+          properties:
+            amount:
+              type: string
+              description: Количество бонусных баллов на счету пользователя в формате "1234.56 баллов"
+            icon:
+              type: object
+              description: Иконка для отображения бонусных баллов
+              properties:
+                id:
+                  type: string
+                  description: Уникальный идентификатор иконки
+                dictionary:
+                  type: string
+                  description: Словарь для получения изображения иконки
+        bonusValueText:
+          type: string
+          description: Текст, описывающий значение бонусных баллов на счету пользователя
+        additionaInfo:
+          type: array
+          description: Дополнительная информация для отображения
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+                description: Текст для отображения
+              fontType:
+                type: string
+                description: Тип шрифта (жирный, курсив и т.д.)
+              link:
+                type: object
+                description: Ссылка для перехода по клику
+                properties:
+                  url:
+                    type: string
+                    description: Адрес ссылки
+        buttons:
+          type: object
+          description: Кнопки для выполнения действий
+          properties:
+            primary:
+              type: object
+              description: Основная кнопка
+              properties:
+                text:
+                  type: string
+                  description: Текст кнопки
+                subtext:
+                  type: string
+                  description: Дополнительный текст кнопки
+                link:
+                  type: object
+                  description: Ссылка для перехода по клику
+                  properties:
+                    url:
+                      type: string
+                      description: Адрес ссылки
+            secondary:
+              type: object
+              description: Дополнительная кнопка
+              properties:
+                text:
+                  type: string
+                  description: Текст кнопки
+                subtext:
+                  type: string
+                  description: Дополнительный текст кнопки
+                link:
+                  type: object
+                  description: Ссылка для перехода по клику
+                  properties:
+                    url:
+                      type: string
+                      description: Адрес ссылки
+    WriteOffBonusWidget:
+      type: object
+      properties:
+        titleIcon:
+          $ref: '#/components/schemas/Image'
+        title:
+          type: string
+          description: Заголовок виджета
+        shortInfo:
+          type: array
+          description: Краткая информация о дате списания бонусов
+          items:
+            type: object
+            properties:
+              bonusValue:
+                type: string
+                description: Количество бонусов, которое будет списано
+              writeOffDay:
+                type: string
+                description: Дата, когда будут списаны бонусы
+        additionaInfoLink:
+          type: array
+          description: Дополнительная информация о списании бонусов в виде ссылок
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+                description: Текст ссылки
+              fontType:
+                type: string
+                description: Тип шрифта ссылки
+              link:
+                $ref: '#/components/schemas/Link'
+        additionalInfo:
+          type: object
+          description: Полная информация о списании бонусов
+          properties:
+            title:
+              type: string
+              description: Заголовок блока с информацией
+            info:
+              type: array
+              description: Дополнительная информация о списании бонусов
+              items:
+                type: object
+                properties:
+                  text:
+                    type: string
+                    description: Текст дополнительной информации
+                  fontType:
+                    type: string
+                    description: Тип шрифта дополнительной информации
+                  link:
+                    $ref: '#/components/schemas/Link'
+            spendButton:
+              type: object
+              description: Кнопка для перехода к списанию бонусов
+              properties:
+                text:
+                  type: string
+                  description: Текст кнопки
+                subtext:
+                  type: string
+                  description: Текст под кнопкой
+                link:
+                  $ref: '#/components/schemas/Link'
+    Link:
+      type: object
+      properties:
+        url:
+          type: string
+          description: URL ссылки
+    Image:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Идентификатор изображения
+        dictionary:
+          type: string
+          description: Название словаря изображения
+    BonusCategory:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Заголовок виджета категорий бонусов.
+        currentBonusCategoryBanner:
+          $ref: '#/components/schemas/BonusBanner'
+          description: Баннер с информацией о текущих категориях бонусов.
+        currentBonusCategoryWidget:
+          $ref: '#/components/schemas/CategoryWidget'
+          description: Виджет со списком текущих категорий бонусов и возможностью их изменения.
+        futureBonusCategoryBanner:
+          $ref: '#/components/schemas/BonusBanner'
+          description: Баннер с информацией о будущих категориях бонусов.
+        futureBonusCategoryWidget:
+          $ref: '#/components/schemas/CategoryWidget'
+          description: Виджет со списком будущих категорий бонусов и возможностью их изменения.
+      required:
+        - title
+        - currentBonusCategoryBanner
+        - currentBonusCategoryWidget
+        - futureBonusCategoryBanner
+        - futureBonusCategoryWidget
+    BonusBanner:
+      type: object
+      properties:
+        backgroundImage:
+          $ref: '#/components/schemas/Image'
+        info:
+          type: string
+          description: Краткое описание баннера
+        description:
+          type: string
+          description: Дополнительное описание баннера
+        chooseCategoryButton:
+          $ref: '#/components/schemas/Button'
+      required:
+        - info
+        - chooseCategoryButton
+    Button:
+      type: object
+      properties:
+        text:
+          type: string
+        subtext:
+          type: string
+        link:
+          $ref: '#/components/schemas/Link'
+      required:
+        - text
+        - link
+    CategoryWidget:
+      type: object
+      properties:
+        info:
+          type: string
+          description: Информация о действующих категориях
+        FAQButton:
+          $ref: '#/components/schemas/Link'
+          description: Кнопка перехода на FAQ МКБ бонус
+        categoryList:
+          type: array
+          items:
+            $ref: '#/components/schemas/BonusCategoryItem'
+          description: Список категорий
+        changeCategoryButton:
+          $ref: '#/components/schemas/Button'
+          description: Кнопка изменения категорий
+    BonusCategoryItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Уникальный идентификатор категории
+        value:
+          type: integer
+          description: Значение категории в баллах
+        name:
+          type: string
+          description: Название категории
+        icon:
+          $ref: '#/components/schemas/Image'
+          description: Иконка категории
+        description:
+          type: string
+          description: Описание категории
+        MCC:
+          type: object
+          properties:
+            text:
+              type: string
+              description: Название поля с кодом MCC
+            list:
+              type: array
+              items:
+                type: integer
+                description: Код MCC
+          description: Коды MCC, связанные с категорией
+      required:
+        - id
+        - value
+        - name
+        - icon
+        - description
+        - MCC
+    BonusLimitinfo:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Заголовок блока лимитов.
+        info:
+          type: array
+          items:
+            $ref: '#/components/schemas/TextLink'
+          description: Информация о лимитах.
+        list:
+          type: array
+          items:
+            $ref: '#/components/schemas/BonusLimitListItem'
+          description: Список с информацией о текущем лимите.
+      required:
+        - title
+        - info
+        - list
+    BonusLimitListItem:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Название лимита.
+        current:
+          type: integer
+          description: Текущее количество бонусов по лимиту.
+        limit:
+          type: integer
+          description: Максимальное количество бонусов по лимиту.
+        exhaustedText:
+          type: string
+          description: Текст, отображаемый при исчерпании лимита.
+      required:
+        - title
+        - current
+        - limit
+        - exhaustedText
+    TextLink:
+      type: object
+      properties:
+        text:
+          type: string
+        fontType:
+          type: string
+        link:
+          $ref: '#/components/schemas/Link'
+      required:
+        - text
+        - fontType
+        - link
+    BonusHistory:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Название виджета.
+        widgetList:
+          type: array
+          items:
+            $ref: '#/components/schemas/BonusHistoryWidget'
+          description: Список виджетов в истории бонусов.
+      required:
+        - title
+        - widgetList
+
+    BonusHistoryWidget:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Название виджета в истории бонусов.
+        paramList:
+          type: array
+          items:
+            $ref: '#/components/schemas/BonusHistoryWidgetParam'
+          description: Список параметров в виджете истории бонусов.
+      required:
+        - title
+        - paramList
+
+    BonusHistoryWidgetParam:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Название параметра в виджете истории бонусов.
+        value:
+          type: number
+          description: Значение параметра в виджете истории бонусов.
+      required:
+        - title
+        - value
+    FooterText:
+      type: array
+      description: Текст в нижней части экрана
+      items:
+        $ref: '#/components/schemas/TextLink'
