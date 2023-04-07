@@ -1,0 +1,966 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "CardInfo.Front API",
+    "version": "v1"
+  },
+  "paths": {
+    "/CardInfo/GetLimitCanBeMoreInfo": {
+      "post": {
+        "tags": [
+          "CardInfo"
+        ],
+        "parameters": [
+          {
+            "name": "r",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "d",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "s",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.LimitCanBeMoreInfoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.LimitCanBeMoreInfoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.LimitCanBeMoreInfoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.LimitCanBeMoreInfoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CardInfo/GetAvaliableMulticurrencyCards": {
+      "post": {
+        "tags": [
+          "CardInfo"
+        ],
+        "parameters": [
+          {
+            "name": "r",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "d",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "s",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.AvaliableMulticurrencyCardsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.AvaliableMulticurrencyCardsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.AvaliableMulticurrencyCardsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.AvaliableMulticurrencyCardsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CardInfo/GetCardMandatoryPaymentInfo": {
+      "post": {
+        "tags": [
+          "CardInfo"
+        ],
+        "parameters": [
+          {
+            "name": "r",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "d",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "s",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.CardMandatoryPaymentInfoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.CardMandatoryPaymentInfoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.CardMandatoryPaymentInfoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.CardMandatoryPaymentInfoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CardInfo/GetDebitCardOrderView": {
+      "post": {
+        "tags": [
+          "CardInfo"
+        ],
+        "parameters": [
+          {
+            "name": "r",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "d",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "s",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.DebitCardProductForRequestInfoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.DebitCardProductForRequestInfoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.DebitCardProductForRequestInfoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.DebitCardProductForRequestInfoResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/CardInfo/GetDivisions": {
+      "post": {
+        "tags": [
+          "CardInfo"
+        ],
+        "parameters": [
+          {
+            "name": "r",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "d",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "s",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "t",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.GetDivisionsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.GetDivisionsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CardInfo.Front.Models.Requests.GetDivisionsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.GetDivisionsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CardInfo.Front.Models.CardLimitInfo": {
+        "type": "object",
+        "properties": {
+          "limitName": {
+            "type": "string",
+            "nullable": true
+          },
+          "limitValue": {
+            "type": "number",
+            "format": "double"
+          },
+          "limitUsed": {
+            "type": "number",
+            "format": "double"
+          },
+          "limitRemain": {
+            "type": "number",
+            "format": "double"
+          },
+          "percentUsed": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limitCurrency": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "limitStartDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "limitEndDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.CardMandatoryPayment": {
+        "type": "object",
+        "properties": {
+          "percentSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "mainSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "fullSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "fine": {
+            "type": "number",
+            "format": "double"
+          },
+          "currCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Requests.AvaliableMulticurrencyCardsRequest": {
+        "required": [
+          "productIds"
+        ],
+        "type": "object",
+        "properties": {
+          "productIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Requests.CardMandatoryPaymentInfoRequest": {
+        "required": [
+          "productId",
+          "rid"
+        ],
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string"
+          },
+          "rid": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Requests.DebitCardProductForRequestInfoRequest": {
+        "required": [
+          "rid"
+        ],
+        "type": "object",
+        "properties": {
+          "rid": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Requests.GetDivisionsRequest": {
+        "required": [
+          "rid"
+        ],
+        "type": "object",
+        "properties": {
+          "rid": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Requests.LimitCanBeMoreInfoRequest": {
+        "required": [
+          "cardId"
+        ],
+        "type": "object",
+        "properties": {
+          "cardId": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.AvaliableMulticurrencyCardsResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "technicalMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "productIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.CardMandatoryPaymentInfoResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "technicalMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "mandatoryPayment": {
+            "$ref": "#/components/schemas/CardInfo.Front.Models.CardMandatoryPayment"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.DebitCardProductForRequestInfoResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "technicalMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageTitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "idViewProp": {
+            "type": "string",
+            "nullable": true
+          },
+          "backgroundColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "backgroundPattern": {
+            "type": "string",
+            "nullable": true
+          },
+          "controlColorMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "newProductInfos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.NewProductInfo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.Division": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.GetDivisionsResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "technicalMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "divisions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardInfo.Front.Models.Responses.Division"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CardInfo.Front.Models.Responses.LimitCanBeMoreInfoResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "technicalMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "rid": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardLimits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardInfo.Front.Models.CardLimitInfo"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Icon": {
+        "type": "object",
+        "properties": {
+          "dictionary": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.InfoItem": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "link": {
+            "type": "string",
+            "nullable": true
+          },
+          "params": {
+            "type": "string",
+            "nullable": true
+          },
+          "fontType": {
+            "type": "string",
+            "nullable": true
+          },
+          "subsText": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.InfoItemBlock": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "infos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItem"
+            },
+            "nullable": true
+          },
+          "orientationType": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Link": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "params": {
+            "type": "string",
+            "nullable": true
+          },
+          "statistic": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Statistic"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.Advantage": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "icon": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Icon"
+          },
+          "topPosition": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.AdvantageBlock": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "blockList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.Advantage"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.Details": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "link": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Link"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.NewProductInfo": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "nullable": true
+          },
+          "promoCard": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.PromoCard"
+          },
+          "params": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.NewProductParam"
+            },
+            "nullable": true
+          },
+          "additionalParams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItemBlock"
+            },
+            "nullable": true
+          },
+          "advantageBlock": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.AdvantageBlock"
+          },
+          "details": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Productpage.Details"
+          },
+          "buttonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "buttonLink": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Link"
+          },
+          "description": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItem"
+            },
+            "nullable": true
+          },
+          "action": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.NewProductParam": {
+        "type": "object",
+        "properties": {
+          "icon": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Icon"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "subtitle": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Productpage.PromoCard": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "idViewProp": {
+            "type": "string",
+            "nullable": true
+          },
+          "cardId": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "subtitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "titleColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "backgroundImage": {
+            "type": "string",
+            "nullable": true
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          },
+          "textColor": {
+            "type": "string",
+            "nullable": true
+          },
+          "promoCardLink": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Link"
+          },
+          "buttonName": {
+            "type": "string",
+            "nullable": true
+          },
+          "buttonLink": {
+            "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.Link"
+          },
+          "description": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Ru.Mkb.Moby.Data.InfoItem"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ru.Mkb.Moby.Data.Statistic": {
+        "type": "object",
+        "properties": {
+          "event": {
+            "type": "string",
+            "nullable": true
+          },
+          "argument": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
