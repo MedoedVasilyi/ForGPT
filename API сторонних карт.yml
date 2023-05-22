@@ -1,0 +1,299 @@
+openapi: 3.0.0
+info:
+  title: ExternalCard Microservice
+  version: 1.0.0
+  description: Микросервис управляет картами стороних банков. Он находится в зоне PCI DSS и обращается в процессинг для совершения операций по созданию, удалению и получению списка операций.
+servers:
+  - url: https://api.example.com/v1
+paths:
+  /deleteExternalCard:
+    post:
+      summary: Удаление карты стороннего банка
+      description: Операция удаляет карту стороннего банка.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteExternalCardRequest'
+            examples:
+              deleteCard:
+                value:
+                  id: "C-346835894309799"
+                  rid: "bgsQqN1Y"
+                  sid: "CgqsV1nQuBGcQNOixutT9OCQ"
+                  type: "DeleteExternalCard"
+                  uid: "Tayh5JRzX8snI8F3cboPuHQMCC/KL2ucL3HcBzaFUJs"
+      responses:
+        '200':
+          description: Успешное удаление карты
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteExternalCardResponse'
+  /addExternalCard:
+    post:
+      summary: Добавление карты стороннего банка
+      description: Операция добавляет карту стороннего банка.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddExternalCardRequest'
+            examples:
+              addCard:
+                value:
+                  cvv: "dsfdsughbajdbfcvapreh324132fcbneujwhfc"
+                  expiredDate: "07/24"
+                  name: "Visa *8373"
+                  number: "dafadyfsgbadhjklfgaiuwegfbyuet4q837651273t5werfd2g38675853"
+                  rid: "8B41Xgnc"
+                  sid: "E4XQBYRlIlXeZqSyM6drFmYM"
+                  type: "AddExternalCard"
+                  uid: "Tayh5JRzX8snI8F3cboPuHQMCC/KL2ucL3HcBzaFUJs"
+      responses:
+        '200':
+          description: Успешное добавление карты
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AddExternalCardResponse'
+  /getOpenKey:
+    post:
+      summary: Получение открытого ключа шифрования
+      description: Операция возвращает открытый ключ шифрования для карты стороннего банка.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GetOpenKeyRequest'
+            examples:
+              getOpenKey:
+                value:
+                  rid: "bgsQqN1Y"
+                  sid: "CgqsV1nQuBGcQNOixutT9OCQ"
+                  type: "GetOpenKey"
+                  uid: "Tayh5JRzX8snI8F3cboPuHQMCC/KL2ucL3HcBzaFUJs"
+      responses:
+        '200':
+          description: Успешное получение ключа
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetOpenKeyResponse'
+  /cards/{clientCode}:
+    get:
+      summary: Возвращает список объектов описывающих карты сторонних банков(back2back вызов по grpc)
+      parameters:
+        - name: clientCode
+          in: path
+          required: true
+          schema:
+            type : string
+            example: "123124"
+      responses:
+        '200':
+          description: Спискок сторонних карт
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  $ref: '#/components/schemas/ExternalCard'
+              examples:
+                cardList:
+                  value:
+                    - cvv: "257"
+                      expiredDate: "07/24"
+                      name: "Visa *8373"
+                      number: "479087nnnnnn8373"
+                      productTypeName: "VISA"
+                      issuingBankName: "Альфабанк"
+components:
+  schemas:
+    DeleteExternalCardRequest:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Идентификатор карты для удаления
+          example: "C-346835894309799"
+        rid:
+          type: string
+          description: Request identifier
+          example: "bgsQqN1Y"
+        sid:
+          type: string
+          description: Session identifier
+          example: "CgqsV1nQuBGcQNOixutT9OCQ"
+        type:
+          type: string
+          description: Type of the operation
+          example: "DeleteExternalCard"
+        uid:
+          type: string
+          description: User identifier
+          example: "Tayh5JRzX8snI8F3cboPuHQMCC/KL2ucL3HcBzaFUJs"
+    DeleteExternalCardResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Response code
+          example: 0
+        messageTitle:
+          type: string
+          description: Title of the response message
+          example: ""
+        message:
+          type: string
+          description: Detailed response message
+          example: ""
+        rid:
+          type: string
+          description: Request identifier
+          example: "VIHCO1fd"
+        title:
+          type: string
+          description: Title of the response
+          example: ""
+        infoBlocks:
+          type: array
+          items:
+            type: string
+          description: Additional info blocks
+          example: []
+        actions:
+          $ref: '#/components/schemas/Actions'
+        transactionModel:
+          $ref: '#/components/schemas/TransactionModel'
+    AddExternalCardRequest:
+      type: object
+      properties:
+        cvv:
+          type: string
+          description: CVV of the card
+          example: "dsfdsughbajdbfcvapreh324132fcbneujwhfc"
+        expiredDate:
+          type: string
+          description: Expiration date of the card
+          example: "07/24"
+        name:
+          type: string
+          description: Name on the card
+          example: "Visa *8373"
+        number:
+          type: string
+          description: Card number
+          example: "dafadyfsgbadhjklfgaiuwegfbyuet4q837651273t5werfd2g38675853"
+        rid:
+          type: string
+          description: Request identifier
+          example: "8B41Xgnc"
+        sid:
+          type: string
+          description: Session identifier
+          example: "E4XQBYRlIlXeZqSyM6drFmYM"
+        type:
+          type: string
+          description: Type of the operation
+          example: "AddExternalCard"
+        uid:
+          type: string
+          description: User identifier
+          example: "Tayh5JRzX8snI8F3cboPuHQMCC/KL2ucL3HcBzaFUJs"
+    AddExternalCardResponse:
+      $ref: '#/components/schemas/DeleteExternalCardResponse'
+    GetOpenKeyRequest:
+      $ref: '#/components/schemas/DeleteExternalCardRequest'
+    GetOpenKeyResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: Response code
+          example: 0
+        messageTitle:
+          type: string
+          description: Title of the response message
+          example: ""
+        message:
+          type: string
+          description: Detailed response message
+          example: ""
+        rid:
+          type: string
+          description: Request identifier
+          example: "bgsQqN1Y"
+        openKey:
+          type: string
+          description: The public encryption key
+          example: "BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDD...IDAQAB\n-----END PUBLIC KEY"
+    Actions:
+      type: object
+      properties:
+        templateStatus:
+          type: integer
+          description: Status of the template
+          example: 0
+        invoices:
+          type: array
+          items:
+            type: string
+          description: List of invoices
+          example: []
+    TransactionModel:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title of the transaction
+          example: ""
+        isSbp:
+          type: boolean
+          description: Indicator if SBP (Faster Payments System)
+          example: false
+        button:
+          type: string
+          description: Button text
+          example: "Готово"
+        infoBlocks:
+          type: array
+          items:
+            type: string
+          description: Additional info blocks for the transaction
+          example: []
+        actions:
+          $ref: '#/components/schemas/Actions'
+    ExternalCard:
+      type: object
+      properties:
+        cvv:
+          type: string
+          description: CVV code of the card
+        expiredDate:
+          type: string
+          description: Expiration date in format MM/YY
+        name:
+          type: string
+          description: Card name
+        number:
+          type: string
+          description: Card number
+        productTypeName:
+          type: string
+          description: Product type name
+        issuingBankName:
+          type: string
+          description: Name of the bank that issued the card
+      required:
+        - cvv
+        - expiredDate
+        - name
+        - number
+        - productTypeName
+        - issuingBankName
+
+
