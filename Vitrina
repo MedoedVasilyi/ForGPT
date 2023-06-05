@@ -10,9 +10,113 @@
     "newProductInfos": [
       {
         "ispromo": false,
+        "idgroup": 2002,
+        "idtypecard": 9,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRWisdomView",
+          "cardId": "MIRWisdom",
+          "title": "МИР",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mudrost.png",
+          "text": "Золотая МИР Пенсионная карта Мудрость",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "Всегда, без дополнительных условий",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "5% баллами в аптеках",
+            "subtitle": [
+              {
+                "text": "И еще одной категории, которую вы выберите сами. 1 балл = 1Р",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "3,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Начислим на сумму до 300 000Р.",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "При наличии пенсионных и социальных выплат",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
         "idgroup": 2013,
         "idtypecard": 119,
-        "productId": "617634335",
+        "productId": "-1",
         "promoCard": {
           "id": "debitCard",
           "idViewProp": "MoscardMirAdvansedView",
@@ -154,7 +258,7 @@
         "ispromo": false,
         "idgroup": 2014,
         "idtypecard": 101,
-        "productId": "163122364",
+        "productId": "-1",
         "promoCard": {
           "id": "debitCard",
           "idViewProp": "MoscardBlackMCWorldBlackEditionView",
@@ -280,7 +384,7 @@
         "ispromo": false,
         "idgroup": 2014,
         "idtypecard": 159,
-        "productId": "522674182",
+        "productId": "-1",
         "promoCard": {
           "id": "debitCard",
           "idViewProp": "MIRSupremeView",
@@ -406,7 +510,7 @@
         "ispromo": false,
         "idgroup": 2014,
         "idtypecard": 108,
-        "productId": "904755837",
+        "productId": "-1",
         "promoCard": {
           "id": "debitCard",
           "idViewProp": "MoscardBlackVisaSignatureView",
@@ -532,7 +636,7 @@
         "ispromo": true,
         "idgroup": -1,
         "idtypecard": -1,
-        "productId": "882073360",
+        "productId": "-1",
         "promoCard": {
           "id": "debitCard",
           "idViewProp": "NFCSticker6View",
@@ -686,5 +790,1824 @@
     "clientMessage": "",
     "technicalMessage": "",
     "rid": "2Ljtrwfb"
+  },
+  {
+    "serviceSet": 7,
+    "idViewProp": "debitCardsView",
+    "backgroundColor": "NEW_PROD_CARD_BG",
+    "titleColor": "NEW_PROD_CARD_TITLE",
+    "title": "Заказ карты",
+    "backgroundPattern": "True",
+    "controlColorMode": "dark",
+    "newProductInfos": [
+      {
+        "ispromo": false,
+        "idgroup": 2002,
+        "idtypecard": 9,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRWisdomView",
+          "cardId": "MIRWisdom",
+          "title": "МИР",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mudrost.png",
+          "text": "Золотая МИР Пенсионная карта Мудрость",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "Всегда, без дополнительных условий",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "5% баллами в аптеках",
+            "subtitle": [
+              {
+                "text": "И еще одной категории, которую вы выберите сами. 1 балл = 1Р",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "3,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Начислим на сумму до 300 000Р.",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "При наличии пенсионных и социальных выплат",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2013,
+        "idtypecard": 119,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardMirAdvansedView",
+          "cardId": "MoscardMirAdvansed",
+          "title": "Москарта",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "backgroundImage": "mir_moscard.png",
+          "text": "МИР",
+          "textColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "При выполнении одного из ",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              },
+              {
+                "text": "условий",
+                "link": "app://InfoDialog",
+                "params": "[{\"text\":\"• Совершение покупок по картам в пакете, в совокупности на сумму не менее 150 000 руб./мес.\n• Сохранение среднемесячного остатка по картам в пакете, в совокупности не менее 1 000 000 руб.\n• Сохранение среднемесячного остатка по срочным вкладам, накопительным счетам, финансовым активам и картам в пакете, в совокупности не менее 2 000 000 руб.\",\"Link\":null,\"Params\":null,\"FontType\":\"normal\"}]",
+                "fontType": "bold",
+                "subsText": ""
+              },
+              {
+                "text": ". В ином случае 1999Р в мес.",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "3 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без условий и ограничений",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 101,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardBlackMCWorldBlackEditionView",
+          "cardId": "MoscardBlackMCWorldBlackEdition",
+          "title": "Москарта",
+          "subtitle": "BLACK",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "MoscardBlackMCWorldBlackEdition.png",
+          "text": "Mastercard World\nBlack Edition",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "При выполнении одного из ",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              },
+              {
+                "text": "условий",
+                "link": "app://InfoDialog",
+                "params": "[{\"text\":\"• Совершение покупок по картам в пакете, в совокупности на сумму не менее 150 000 руб./мес.\n• Сохранение среднемесячного остатка по картам в пакете, в совокупности не менее 1 000 000 руб.\n• Сохранение среднемесячного остатка по срочным вкладам, накопительным счетам, финансовым активам и картам в пакете, в совокупности не менее 2 000 000 руб.\",\"Link\":null,\"Params\":null,\"FontType\":\"normal\"}]",
+                "fontType": "bold",
+                "subsText": ""
+              },
+              {
+                "text": ". В ином случае 1999Р в мес.",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без условий и ограничений",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 159,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRSupremeView",
+          "cardId": "MIRSupreme",
+          "title": "Москарта",
+          "subtitle": "Black",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mir_supreme.png",
+          "text": "МИР Supreme",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "При выполнении одного из ",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              },
+              {
+                "text": "условий",
+                "link": "app://InfoDialog",
+                "params": "[{\"text\":\"• Совершение покупок по картам в пакете, в совокупности на сумму не менее 150 000 руб./мес.\n• Сохранение среднемесячного остатка по картам в пакете, в совокупности не менее 1 000 000 руб.\n• Сохранение среднемесячного остатка по срочным вкладам, накопительным счетам, финансовым активам и картам в пакете, в совокупности не менее 2 000 000 руб.\",\"Link\":null,\"Params\":null,\"FontType\":\"normal\"}]",
+                "fontType": "bold",
+                "subsText": ""
+              },
+              {
+                "text": ". В ином случае 1999Р в мес.",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без условий и ограничений",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 108,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardBlackVisaSignatureView",
+          "cardId": "MoscardBlackVisaSignature",
+          "title": "Москарта",
+          "subtitle": "BLACK",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "MoscardBlackVisaSignature.png",
+          "text": "Visa\nSignature",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "При выполнении одного из ",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              },
+              {
+                "text": "условий",
+                "link": "app://InfoDialog",
+                "params": "[{\"text\":\"• Совершение покупок по картам в пакете, в совокупности на сумму не менее 150 000 руб./мес.\n• Сохранение среднемесячного остатка по картам в пакете, в совокупности не менее 1 000 000 руб.\n• Сохранение среднемесячного остатка по срочным вкладам, накопительным счетам, финансовым активам и картам в пакете, в совокупности не менее 2 000 000 руб.\",\"Link\":null,\"Params\":null,\"FontType\":\"normal\"}]",
+                "fontType": "bold",
+                "subsText": ""
+              },
+              {
+                "text": ". В ином случае 1999Р в мес.",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без условий и ограничений",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": true,
+        "idgroup": -1,
+        "idtypecard": -1,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "NFCSticker7View",
+          "cardId": "NFCSticker7",
+          "title": "Платежный стикер",
+          "subtitle": "Оплачивайте покупки телефоном",
+          "titleColor": "NEW_PROD_CARD_TITLE",
+          "backgroundImage": "nfc_stiker.png",
+          "text": "МИР",
+          "textColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "money.png"
+            },
+            "title": "Активация 999 ₽",
+            "subtitle": [
+              {
+                "text": "Взимается вместе с первой транзакцией",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "При выполнении одного из ",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              },
+              {
+                "text": "условий",
+                "link": "app://InfoDialog",
+                "params": "[{\"text\":\"• Совершение покупок по картам в пакете, в совокупности на сумму не менее 150 000 руб./мес.\n• Сохранение среднемесячного остатка по картам в пакете, в совокупности не менее 1 000 000 руб.\n• Сохранение среднемесячного остатка по срочным вкладам, накопительным счетам, финансовым активам и картам в пакете, в совокупности не менее 2 000 000 руб.\",\"Link\":null,\"Params\":null,\"FontType\":\"normal\"}]",
+                "fontType": "bold"
+              },
+              {
+                "text": ". В ином случае 1999Р в мес.",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1 ₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без условий и ограничений",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "travel.png"
+            },
+            "title": "Бизнес-залы",
+            "subtitle": [
+              {
+                "text": "2 прохода в месяц бесплатно",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "Как это работает?",
+          "blockList": [
+            {
+              "title": "Получите стикер в офисе Банка",
+              "description": "Его можно наклеить на смартфон или чехол",
+              "icon": {
+                "dictionary": "offers",
+                "id": "bank_red.png"
+              },
+              "topPosition": false
+            },
+            {
+              "title": "Оплачивайте покупки бесконтактно",
+              "description": "Стикер работает как обычная банковская карта",
+              "icon": {
+                "dictionary": "offers",
+                "id": "nfc_red.png"
+              },
+              "topPosition": false
+            },
+            {
+              "title": "Снимайте наличные",
+              "description": "В банкоматах с NFC",
+              "icon": {
+                "dictionary": "offers",
+                "id": "pay_red.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить в отделении",
+        "buttonLink": {
+          "url": "app://AtmsAndBranches?atm=false&businessCenters=true&division=true&terminal=false&operatingCashDesks=false",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      }
+    ],
+    "code": "0",
+    "clientMessage": "",
+    "technicalMessage": "",
+    "rid": ""
+  },
+  {
+    "serviceSet": 8,
+    "idViewProp": "debitCardsView",
+    "backgroundColor": "NEW_PROD_CARD_BG",
+    "titleColor": "NEW_PROD_CARD_TITLE",
+    "title": "Заказ карты",
+    "backgroundPattern": "True",
+    "controlColorMode": "dark",
+    "newProductInfos": [
+      {
+        "ispromo": false,
+        "idgroup": 2002,
+        "idtypecard": 9,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRWisdomView",
+          "cardId": "MIRWisdom",
+          "title": "МИР",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mudrost.png",
+          "text": "Золотая МИР Пенсионная карта Мудрость",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "access.png"
+            },
+            "title": "Бесплатное обслуживание",
+            "subtitle": [
+              {
+                "text": "Всегда, без дополнительных условий",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "5% баллами в аптеках",
+            "subtitle": [
+              {
+                "text": "И еще одной категории, которую вы выберите сами. 1 балл = 1Р",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "3,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Начислим на сумму до 300 000Р.",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "4,5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "При наличии пенсионных и социальных выплат",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2013,
+        "idtypecard": 119,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardMirAdvansedView",
+          "cardId": "MoscardMirAdvansed",
+          "title": "Москарта",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "backgroundImage": "mir_moscard.png",
+          "text": "МИР",
+          "textColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "3 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 101,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardBlackMCWorldBlackEditionView",
+          "cardId": "MoscardBlackMCWorldBlackEdition",
+          "title": "Москарта",
+          "subtitle": "BLACK",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "MoscardBlackMCWorldBlackEdition.png",
+          "text": "Mastercard World\nBlack Edition",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 159,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRSupremeView",
+          "cardId": "MIRSupreme",
+          "title": "Москарта",
+          "subtitle": "Black",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mir_supreme.png",
+          "text": "МИР Supreme",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2014,
+        "idtypecard": 108,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MoscardBlackVisaSignatureView",
+          "cardId": "MoscardBlackVisaSignature",
+          "title": "Москарта",
+          "subtitle": "BLACK",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "MoscardBlackVisaSignature.png",
+          "text": "Visa\nSignature",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2015,
+        "idtypecard": 109,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "ExclusiveMCWorldEliteView",
+          "cardId": "ExclusiveMCWorldElite",
+          "title": "Private card",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "ExclusiveMCWorldElite.png",
+          "text": "Mastercard\nWorld Elite",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2015,
+        "idtypecard": 160,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "MIRSupremeVIPView",
+          "cardId": "MIRSupremeVIP",
+          "title": "Private card",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "mir_supreme_vip.png",
+          "text": "МИР Supreme",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": false,
+        "idgroup": 2015,
+        "idtypecard": 110,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "ExclusiveVISAInfiniteView",
+          "cardId": "ExclusiveVISAInfinite",
+          "title": "Private card",
+          "subtitle": "",
+          "titleColor": "NEW_PROD_PROMO_TITLE_LIGHT",
+          "backgroundImage": "ExclusiveVISAInfinite.png",
+          "text": "Visa\nInfinite",
+          "textColor": "NEW_PROD_PROMO_TEXT_LIGHT",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничения по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "currency.png"
+            },
+            "title": "Мультивалютность",
+            "subtitle": [
+              {
+                "text": "Переключайтесь между рублями, долларами и евро",
+                "link": "",
+                "params": "",
+                "fontType": "normal",
+                "subsText": ""
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "",
+          "blockList": [
+            {
+              "title": "Мгновенный выпуск",
+              "description": "Пользуйтесь сразу после оформления",
+              "icon": {
+                "dictionary": "offers",
+                "id": "virtual-card.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить",
+        "buttonLink": {
+          "url": "app://CardOrder",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      },
+      {
+        "ispromo": true,
+        "idgroup": -1,
+        "idtypecard": -1,
+        "productId": "-1",
+        "promoCard": {
+          "id": "debitCard",
+          "idViewProp": "NFCSticker8View",
+          "cardId": "NFCSticker8",
+          "title": "Платежный стикер",
+          "subtitle": "Оплачивайте покупки телефоном",
+          "titleColor": "NEW_PROD_CARD_TITLE",
+          "backgroundImage": "nfc_stiker.png",
+          "text": "МИР",
+          "textColor": "NEW_PROD_PROMO_TEXT_DARK",
+          "description": []
+        },
+        "params": [
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "money.png"
+            },
+            "title": "Активация бесплатно",
+            "subtitle": []
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "bonus.png"
+            },
+            "title": "7% баллами за покупки",
+            "subtitle": [
+              {
+                "text": "4 всегда выгодных категории 1 балл = 1 ₽",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "percent.png"
+            },
+            "title": "До 5% доход на остаток",
+            "subtitle": [
+              {
+                "text": "Без ограничений по сумме",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "travel.png"
+            },
+            "title": "Бизнес-залы",
+            "subtitle": [
+              {
+                "text": "Бесплатно и без ограничений",
+                "fontType": "normal"
+              }
+            ]
+          },
+          {
+            "icon": {
+              "dictionary": "offers",
+              "id": "service.png"
+            },
+            "title": "Консьерж-сервис",
+            "subtitle": [
+              {
+                "text": "24 часа в сутки",
+                "link": "",
+                "params": "",
+                "fontType": "normal"
+              }
+            ]
+          }
+        ],
+        "additionalParams": [],
+        "advantageBlock": {
+          "title": "Как это работает?",
+          "blockList": [
+            {
+              "title": "Получите стикер в офисе Банка",
+              "description": "Его можно наклеить на смартфон или чехол",
+              "icon": {
+                "dictionary": "offers",
+                "id": "bank_red.png"
+              },
+              "topPosition": false
+            },
+            {
+              "title": "Оплачивайте покупки бесконтактно",
+              "description": "Стикер работает как обычная банковская карта",
+              "icon": {
+                "dictionary": "offers",
+                "id": "nfc_red.png"
+              },
+              "topPosition": false
+            },
+            {
+              "title": "Снимайте наличные",
+              "description": "В банкоматах с NFC",
+              "icon": {
+                "dictionary": "offers",
+                "id": "pay_red.png"
+              },
+              "topPosition": false
+            }
+          ]
+        },
+        "details": {
+          "title": "Подробные тарифы",
+          "link": {
+            "url": "file://info/c2c-tariffs.pdf"
+          }
+        },
+        "buttonName": "Оформить в отделении",
+        "buttonLink": {
+          "url": "app://AtmsAndBranches?atm=false&businessCenters=true&division=true&terminal=false&operatingCashDesks=false",
+          "params": "-1"
+        },
+        "description": [],
+        "action": []
+      }
+    ]
   }
 ]
